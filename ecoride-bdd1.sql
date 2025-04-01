@@ -1,5 +1,5 @@
 CREATE TABLE users(
-   Id INT AUTO_INCREMENT,
+   id INT AUTO_INCREMENT,
    email VARCHAR(50),
    password VARCHAR(50),
    role VARCHAR(50),
@@ -12,8 +12,18 @@ CREATE TABLE users(
    pseudo VARCHAR(50),
    credit INT,
    actif BOOLEAN,
-   PRIMARY KEY(Id)
+   PRIMARY KEY(id)
 );
+
+--
+-- Déchargement des données de la table `users`
+--
+/*
+INSERT INTO `users` (`id`, `email`, `password`, `nom`, `pseudo`, `role`) VALUES
+(1, 'coco@test.com', '$2y$10$0H5ANXRIxV4n.p/zDB1QJeTtflFMbSrCyG.EMrYUCc3j6RY356uKe', 'christelle', 'coco', 'conducteur'),
+(2, 'admin@coco.com', '$2y$10$RLOOYkojLTZNEGYluSZAxeaTgEylfL0JsjLUMcFA20TxJMHIXVyBy', 'admin', 'admin', 'admin');
+
+*/
 
 CREATE TABLE marque(
    Id_marque INT AUTO_INCREMENT,
