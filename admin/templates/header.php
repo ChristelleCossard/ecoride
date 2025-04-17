@@ -25,7 +25,7 @@ $adminMenu = [
 <body>
     <div class="container d-flex">
 
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+        <div class="d-flex flex-column flex-shrink-0 p-3 bg-success-subtle text-dark" style="width: 280px;">
             <a href="../index.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <span class="fs-4">Home</span>
             </a>
