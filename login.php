@@ -2,8 +2,8 @@
 require_once('templates/header.php');
 require_once('lib/user2.php');
 
-//require_once('lib/config.php');
-//require_once('lib/pdo.php');
+require_once('lib/config.php');
+require_once('lib/pdo.php');
 require_once('lib/menu.php');
 
 $errors = [];
@@ -42,7 +42,7 @@ if (isset($_POST['loginUser'])) {
 if ($user) {
   
   $_SESSION['user'] = ['email' => $user['email'],'role' => $user['role'] ];
- if ($user['role'] == "conducteur"){
+ if ($user['role'] == "user"){
   header("location: utilisateur/index.php");
   //header('location: administration.php');
  }else{
