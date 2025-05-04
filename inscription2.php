@@ -1,5 +1,6 @@
 <?php
 require_once('templates/header.php');
+require_once('lib/user2.php');
 require_once('lib/user.php');
 
 $errors = [];
@@ -13,7 +14,7 @@ $users =
 
 if (isset($_POST['addUser'])) {
    
-    $res = addUser($pdo, $_POST['first_name'], $_POST['last_name'], $_POST['email'], $_POST['password']);
+    $res = addUser($pdo, $_POST['nom'], $_POST['prenom'], $_POST['email'], $_POST['password']);
 
     if ($res) {
         $messages[] = 'Merci pour votre inscription, Veuillez vous connecter ici:  <a href="login.php" class="btn btn-outline-primary me-2">Se connecter</a>';
@@ -45,13 +46,13 @@ if (isset($_POST['addUser'])) {
 <body class="text-center">
 <form method="POST" enctype="multipart/form-data">
     <div class="mb-3">
-        <label for="first_name" class="form-label"">Prénom</label>
-        <input type="first_name" name="first_name" id="first_name" class="form-control">
+        <label for="prenom" class="form-label"">Prénom</label>
+        <input type="prenom" name="prenom" id="prenom" class="form-control">
     </div>
 
     <div class="mb-3">
-        <label for="last_name" class="form-label"">Nom</label>
-        <input type="last_name" name="last_name" id="last_name" class="form-control">
+        <label for="nom" class="form-label"">Nom</label>
+        <input type="nom" name="nom" id="nom" class="form-control">
     </div>
 
     <div class="mb-3">

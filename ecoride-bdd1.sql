@@ -30,6 +30,12 @@ CREATE TABLE marque(
    libelle VARCHAR(50),
    PRIMARY KEY(id_marque)
 );
+/*
+INSERT INTO `marque` (`id_marque`, `libelle`) VALUES
+(1,'Renault'),
+(2,'Peugeot');
+
+*/
 
 CREATE TABLE avis(
    id_avis INT AUTO_INCREMENT,
