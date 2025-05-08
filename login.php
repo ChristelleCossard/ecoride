@@ -46,9 +46,13 @@ if ($user) {
  if ($user['role'] == "user"){
   header("location: utilisateur/index.php");
   //header('location: administration.php');
- }else{
-  var_dump($_SESSION);
+ }elseif ($user['role'] == "employe"){
+  header("location: employe/index.php");
+}elseif ($user['role'] == "admin"){
+  header("location: admin/index.php");
   //header('location: index.php');
+ }else {
+  var_dump($_SESSION);
  }
  
 } else {
