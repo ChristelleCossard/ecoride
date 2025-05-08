@@ -1,8 +1,12 @@
 <?php
   //require_once('lib/session.php');
    require_once('lib/menu.php');
-// require_once('lib/config.php');
- //require_once ('lib/pdo.php');
+ require_once('lib/config.php');
+ require_once ('lib/pdo.php');
+// require_once('lib/Autoloader.php');
+
+// use App\Autoloader;
+// Autoloader::register();
 
   $currentPage = basename($_SERVER['SCRIPT_NAME']);
 //var_dump($_SERVER);
