@@ -1,7 +1,7 @@
 <?php
   $mainMenu = [
     'index.php' => 'Accueil', 
-    'convoiturages.php' => 'convoiturages',
+    'covoiturages.php' => 'covoiturages',
     'contact.php' => 'contact',
     'modele.php' => 'Modele',
   ];

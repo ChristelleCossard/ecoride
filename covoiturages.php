@@ -3,7 +3,7 @@ require_once('templates/header.php');
 ?>
 
 
-<h1 align="center">Bienvenue sur la page convoiturages!</h1>
+<h1 align="center">Bienvenue sur la page covoiturages!</h1>
 <p>contenu ....</p>
 
 <?php
