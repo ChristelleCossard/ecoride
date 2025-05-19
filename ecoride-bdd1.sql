@@ -26,40 +26,46 @@ INSERT INTO `users` (`id`, `email`, `password`, `nom`, `pseudo`, `role`) VALUES
 */
 
 CREATE TABLE marque(
-   Id_marque INT AUTO_INCREMENT,
+   id_marque INT AUTO_INCREMENT,
    libelle VARCHAR(50),
-   PRIMARY KEY(Id_marque)
+   PRIMARY KEY(id_marque)
 );
+/*
+INSERT INTO `marque` (`id_marque`, `libelle`) VALUES
+(1,'Renault'),
+(2,'Peugeot');
+
+*/
 
 CREATE TABLE avis(
-   Id_avis INT AUTO_INCREMENT,
+   id_avis INT AUTO_INCREMENT,
    commentaire VARCHAR(50),
    note VARCHAR(50),
    statut VARCHAR(50),
-   PRIMARY KEY(Id_avis)
+   PRIMARY KEY(id_avis)
 );
 
 CREATE TABLE preferences(
-   Id_preferences INT AUTO_INCREMENT,
-   PRIMARY KEY(Id_preferences)
+   id_preferences INT AUTO_INCREMENT,
+   PRIMARY KEY(id_preferences)
 );
 
 CREATE TABLE voiture(
-   Id_voiture INT AUTO_INCREMENT,
+   id_voiture INT AUTO_INCREMENT,
    modele VARCHAR(50),
    immatriculation VARCHAR(50),
    energie VARCHAR(255),
    couleur VARCHAR(50),
    date_immatriculation VARCHAR(50),
-   Id INT NOT NULL,
-   Id_marque INT NOT NULL,
-   PRIMARY KEY(Id_voiture),
-   FOREIGN KEY(Id) REFERENCES users(Id),
-   FOREIGN KEY(Id_marque) REFERENCES marque(Id_marque)
+   id INT NOT NULL,
+   id_marque INT NOT NULL,
+   PRIMARY KEY(id_voiture),
+   FOREIGN KEY(id) REFERENCES users(id),
+   FOREIGN KEY(id_marque) REFERENCES marque(id_marque)
 );
 
 CREATE TABLE covoiturage(
-   Id_covoiturage INT AUTO_INCREMENT,
+   id_covoiturage INT AUTO_INCREMENT,
    date_depart DATE,
    heure_depart TIME,
    lieu_depart VARCHAR(50),
@@ -69,23 +75,23 @@ CREATE TABLE covoiturage(
    statut VARCHAR(50),
    nbplace INT,
    prixpersonne DECIMAL(15,2),
-   Id_voiture INT NOT NULL,
-   PRIMARY KEY(Id_covoiturage),
-   FOREIGN KEY(Id_voiture) REFERENCES voiture(Id_voiture)
+   id_voiture INT NOT NULL,
+   PRIMARY KEY(id_covoiturage),
+   FOREIGN KEY(id_voiture) REFERENCES voiture(id_voiture)
 );
 
 CREATE TABLE participe(
-   Id_covoiturage INT,
-   Id INT,
-   PRIMARY KEY(Id_covoiturage, Id),
-   FOREIGN KEY(Id_covoiturage) REFERENCES covoiturage(Id_covoiturage),
-   FOREIGN KEY(Id) REFERENCES users(Id)
+   id_covoiturage INT,
+   id INT,
+   PRIMARY KEY(id_covoiturage, id),
+   FOREIGN KEY(id_covoiturage) REFERENCES covoiturage(id_covoiturage),
+   FOREIGN KEY(id) REFERENCES users(id)
 );
 
 CREATE TABLE depose(
-   Id INT,
-   Id_avis INT,
-   PRIMARY KEY(Id, Id_avis),
-   FOREIGN KEY(Id) REFERENCES users(Id),
-   FOREIGN KEY(Id_avis) REFERENCES avis(Id_avis)
+   id INT,
+   id_avis INT,
+   PRIMARY KEY(id, id_avis),
+   FOREIGN KEY(id) REFERENCES users(id),
+   FOREIGN KEY(id_avis) REFERENCES avis(id_avis)
 );

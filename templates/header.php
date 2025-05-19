@@ -1,9 +1,14 @@
 <?php
   //require_once('lib/session.php');
- // require_once('lib/config.php');
- //require_once ('lib/pdo.php');
+   require_once('lib/menu.php');
+ require_once('lib/config.php');
+ require_once ('lib/pdo.php');
+// require_once('lib/Autoloader.php');
 
- // $currentPage = basename($_SERVER['SCRIPT_NAME']);
+// use App\Autoloader;
+// Autoloader::register();
+
+  $currentPage = basename($_SERVER['SCRIPT_NAME']);
 //var_dump($_SERVER);
   
 ?>
@@ -31,18 +36,19 @@
 <body>
 
 <div class= "container">
+<div class="bg-success p-2" style="--bs-bg-opacity: .2;">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-        <div class="col-md-3 mb-2 mb-md-0">
+        
             <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-                <img width="200" src="images/logo-paintfab.png" alt="Logo Paintfab">
+                <img width="200" src="images/logo-ecoride.png" alt="Logo">
             </a>
-</div>
-            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav nav-pills">
+
+<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 nav nav-pills">
         <?php foreach ($mainMenu as $key => $value) { ?>
           <li class="nav-item"><a href="<?=$key; ?>" class="nav-link <?php if ($currentPage === $key) { echo 'active'; } ?>"><?=$value ;?></a></li>
         <?php } ?>
         </ul>
-
+        
         <div class="col-md-3 text-end">
       <?php if(!isset($_SESSION['user'])) { ?>
         <a href="login.php" class="btn btn-outline-primary me-2">Se connecter</a>
@@ -52,7 +58,7 @@
           <a href="admin/index.php" class="btn btn-primary"> Espace Administration</a>
           <a href="logout.php" class="btn btn-primary">Se déconnecter</a>
         <?php } ?>
-      
+        </div>
       </div>
 
             
