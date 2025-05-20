@@ -43,7 +43,7 @@ $adminMenu = [
                     <strong>Admin</strong>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-             <li><a class="dropdown-item" href="/logout.php">Déconnexion</a></li>
+             <li><a class="dropdown-item" href="../logout.php">Déconnexion</a></li>
                 </ul>
             </div>
         </div>

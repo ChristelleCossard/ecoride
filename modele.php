@@ -6,7 +6,7 @@ require_once('templates/header.php');
 <h1 align="center">Bienvenue sur la page modèle!</h1>
 <p>contenu ....</p>
 <?php
-
+/*
 use App\Autoloader;
 use App\Models\AnnoncesModel;
 use App\Models\Model;
@@ -19,7 +19,8 @@ Autoloader::register();
 
 
 $model = new AnnoncesModel;
-var_dump($model);
+//var_dump($model);
+*/
 ?>
 <?php
 require_once('templates/footer.php');
