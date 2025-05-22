@@ -8,7 +8,8 @@
                 </div>
                 <div class="col-lg-6">
                     <h3 class="display-5 fw-bold lh-1 mb-3">Qui sommes nous?</h3>
-                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <p class="lead">La startup "EcoRide" fraichement crée en France, a pour objectif de réduire l'impact environnemental des déplacements en encourageant le covoiturage. EcoRide prône une approche écologique.
+</p><p>L’ambition "EcoRide" est de devenir la principale plateforme de covoiturage pour les voyageurs soucieux de l'environnement et ceux qui recherchent une solution économique pour leurs déplacements. Il est important à souligner que la plateforme de covoiturage  gère uniquement les déplacements en voitures.</p>
                    
                 </div>
             </div>
