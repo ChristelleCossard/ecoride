@@ -12,10 +12,10 @@ class Db extends PDO
     private static $instance;
 
     // Informations de connexion
-    private const DBHOST = 'mysql-cocodev.alwaysdata.net';
-    private const DBUSER = 'cocodev';
-    private const DBPASS = 'Vicky.10';
-    private const DBNAME = 'cocodev_ecoride';
+    private const DBHOST = '';
+    private const DBUSER = '';
+    private const DBPASS = '';
+    private const DBNAME = '';
 
     private function __construct()
     {
