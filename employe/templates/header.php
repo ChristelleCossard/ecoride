@@ -1,6 +1,8 @@
 <?php
 $adminMenu = [
     'index.php' => 'Accueil',
+    'avis.php' => 'Avis',
+    'covoit-nul.php' => 'Covoiturages défectueux',
     
 ];
 ?>
@@ -17,7 +19,7 @@ $adminMenu = [
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
-    <title>Admin </title>
+    <title>Employe </title>
 </head>
 
 

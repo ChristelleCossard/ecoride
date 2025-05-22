@@ -1,7 +1,8 @@
 <?php
 $adminMenu = [
     'index.php' => 'Accueil',
-    
+    'comptes.php' => 'Comptes employés',
+    'graphiques.php' => 'Graphiques',
 ];
 ?>
 

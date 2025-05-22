@@ -1,6 +1,12 @@
 <?php
 $adminMenu = [
     'index.php' => 'Accueil',
+    'avis-conducteur.php' => 'Avis sur un conducteur',
+    'preferences.php' => 'Préférences d un conducteur',
+    'detail-covoiturage.php' => 'Détail d un covoiturage',
+    'voyage.php' => 'Saisir un voyage',
+    'historique.php' => 'Historique des covoiturages',
+
     
 ];
 ?>

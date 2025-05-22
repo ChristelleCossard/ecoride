@@ -9,9 +9,9 @@ require_once __DIR__ . "/templates/header.php";
 ?>
 
 <div class="px-4 py-5 my-5 text-left">
-  <h1 class="display-5 fw-bold text-body-emphasis">Page d'administration</h1>
+  <h1 class="display-5 fw-bold text-body-emphasis">Page d'administration des comptes des salariés</h1>
   <div class="col-lg-12">
-    <p class="lead mb-4">Page administration des utilisateurs passagers ou conducteurs.</p>
+    <p class="lead mb-4">Comptes des salariés</p>
   </div>
 </div>
 
